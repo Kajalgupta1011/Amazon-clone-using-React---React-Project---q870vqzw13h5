@@ -27,7 +27,7 @@ function Orders({orders}) {
                 {orders?.map(({id, amount, amountShipping, items, timestamp, images}) =>(
                     <>
 
-                    <h2>Order</h2>
+                    {/* <h2>Order</h2> */}
                         <Order
                         key={id}
                         id={id}
