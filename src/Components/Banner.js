@@ -17,14 +17,17 @@ function Banner() {
             <img loading='lazy' src="https://m.media-amazon.com/images/I/81CW3yNtc-L._SX3000_.jpg" alt="" />
         </div>
         <div>
+            <img loading='lazy' src="https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/61Q6NH9rVeL._SX3000_.jpg" alt="" />
+        </div>
+        <div>
             <img loading='lazy' src="https://m.media-amazon.com/images/I/61aURrton0L._SX3000_.jpg" alt="" />
         </div>
         <div>
             <img loading='lazy' src="https://m.media-amazon.com/images/I/71cQMXCLSvL._SX3000_.jpg" alt="" />
         </div>
-        <div>
+        {/* <div>
             <img loading='lazy' src="https://m.media-amazon.com/images/I/61HaxKaBpkL._SX3000_.jpg" alt="" />
-        </div>
+        </div> */}
         </Carousel>
     </div>
   )

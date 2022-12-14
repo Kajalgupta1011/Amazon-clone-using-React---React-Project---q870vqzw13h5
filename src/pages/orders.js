@@ -59,8 +59,9 @@ export async function getServerSideProps(context){
     }
 
     //firebase db
-    const stripeOrders = await db.collection('user').doc(session.user.email).collection('orders').orderBy('timestamp','desc').get();
-    console.log('-firebaseDB----------------');
+    // const stripeOrders = await db.collection('users').doc(session.user.email).collection('orders').orderBy('timestamp','desc').get();
+    const stripeOrders = await db.collection('users').doc(session.user.email).collection('orders').get();
+    console.log('-firebaseDB----------------', stripeOrders);
 //stripeOrders
     const orders =  await Promise.all(
         stripeOrders.docs.map(async (order)=>({
